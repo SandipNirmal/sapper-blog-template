@@ -23,14 +23,14 @@
   }
 
   header h1 {
-    margin-bottom: 0.7em;
+    margin-bottom: 0.5em;
   }
 
-  header p {
-    color: #AAA;
+  header span {
+    color: #999;
     text-transform: uppercase;
-    font-family: Rubik, sans-serif;
     font-weight: 600;
+    font-size: 0.875em;
   }
 
   header hr {
@@ -44,8 +44,8 @@
 </svelte:head>
 
 <header>
-  <p>{post.printDate} ~ {post.printReadingTime}</p>
   <h1>{post.title}</h1>
+  <span>{post.printDate} ~ {post.printReadingTime}</span>
   <hr />
 </header>
 <div class="container">

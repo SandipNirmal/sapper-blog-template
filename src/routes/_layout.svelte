@@ -8,8 +8,8 @@
   .layout {
     display: flex;
     flex-direction: column;
-    width: 100%;
-    max-width: 1440px;
+    width: 100vw;
+    max-width: 1000px;
     margin: 0 auto;
     min-height: 100%;
     min-height: 100vh;
@@ -20,7 +20,6 @@
     position: relative;
     margin: 0 auto;
     max-width: 1280px;
-    background-color: white;
     padding: 1em 2em;
     box-sizing: border-box;
     width: 100%;
