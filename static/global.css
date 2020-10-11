@@ -7,8 +7,8 @@
   --var-link-color: rgb(0, 122, 255);
 }
 
-/* :root[data-theme='dark'] { */
-:root {
+:root[data-theme='dark'] {
+/* :root { */
   --var-bg-color: #17212d;
   --var-bg-gray: #616161;
   --var-primary-color: rgb(247, 250, 252);

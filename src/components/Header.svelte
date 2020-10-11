@@ -25,7 +25,9 @@
 
 <header>
   <div class="header">
-    <h3>SN</h3>
+    <div>
+      <h3>Sandip Nirmal</h3>
+    </div>
     <Nav {segment} />
   </div>
 </header>
