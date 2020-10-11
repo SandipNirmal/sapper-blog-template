@@ -13,6 +13,14 @@
 </script>
 
 <style>
+  h2 {
+    margin-top: 1em;
+  }
+
+  p {
+    margin: 8px 0;
+  }
+
   h2,
   .post-item-footer {
     font-weight: 700;
