@@ -32,6 +32,12 @@
     font-weight: 600;
   }
 
+  @media (max-width: 480px) {
+    .logo {
+      font-size: 1.2em;
+    }
+  }
+
   a {
     color: var(--var-text-primary);
     transition: color 0.5s cubic-bezier(0.28, 0.11, 0.32, 1);

@@ -35,13 +35,18 @@
   }
 
   footer {
+    width: 100vw;
     color: var(--var-secodary-color);
     font-size: 1em;
-    margin: 1em auto;
-    padding: 1em 2em;
     text-align: center;
-    width: 100%;
-    max-width: var(--max-content-width);
+    /* background-color: var(--var-bg-footer); */
+    margin-top: 2em;
+  }
+
+  .footer {
+    max-width: var(--max-width);
+    margin: 0 auto;
+    padding: 4em 2em 1.5em;
   }
 </style>
 
@@ -53,16 +58,17 @@
   </main>
 
   <footer>
-    <span>
-      <!-- By: Sandip Nirmal. -->
-      
-      
-      
-      Made with
-      <a
-        href="https://sapper.svelte.dev"
-        rel="noreferrer"
-        target="_blank">Sapper</a>.
-    </span>
+    <div class="footer">
+      <span>
+        <!-- By: Sandip Nirmal. -->
+        
+        
+        Made with
+        <a
+          href="https://sapper.svelte.dev"
+          rel="noreferrer"
+          target="_blank">Sapper</a>.
+      </span>
+    </div>
   </footer>
 </div>
