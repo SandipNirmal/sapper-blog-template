@@ -15,7 +15,7 @@ html {
   --var-secodary-color: rgb(84, 84, 86);
   --var-blue-color: rgb(0, 122, 255);
 
-  transition: all 0.5s linear;
+  transition: all 1s ease-in-out;
 }
 
 html[data-theme='dark'] {
