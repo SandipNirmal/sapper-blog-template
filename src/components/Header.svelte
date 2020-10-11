@@ -7,23 +7,19 @@
 
 <style>
   header {
-    margin: 0 auto;
-    max-width: 1048px;
-    width: 100%;
+    width: 100vw;
     height: 56px;
+    margin: 0 auto;
+    max-width: var(--max-width);
   }
 
   .header {
     display: flex;
-    padding: 8px 24px;
-    align-items: center;
-  }
-
-  h3 {
-    background-color: #000000;
-    color: #fff;
-    border-radius: 50%;
     padding: 8px;
+    align-items: center;
+    width: 100%;
+    max-width: var(--max-content-width);
+    margin: 0 auto;
   }
 </style>
 

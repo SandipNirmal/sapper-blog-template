@@ -1,3 +1,30 @@
+:root {
+  --var-bg-color: #ffffff;
+  --var-bg-gray: #e1e1e1;
+  --var-primary-color: rgb(36, 36, 36);
+  --var-secodary-color: rgb(84, 84, 86);
+  --var-blue-color: rgb(0, 122, 255);
+  --var-link-color: rgb(0, 122, 255);
+}
+
+/* :root[data-theme='dark'] { */
+:root {
+  --var-bg-color: #17212d;
+  --var-bg-gray: #616161;
+  --var-primary-color: rgb(247, 250, 252);
+  --var-secodary-color: rgb(226, 232, 240);
+  --var-blue-color: rgb(29, 161, 242);
+  --var-link-color: rgb(29, 161, 242);
+}
+
+html {
+  --var-color-white: #ffffff;
+  --var-color-black: #000000;
+  --var-link-color: var(--var-blue-color);
+  --max-content-width: 980px;
+  --max-width: 1024px;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -10,10 +37,16 @@ body {
     'Apple Color Emoji', 'Segeo UI Emoji', 'Segeo UI Symbol';
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  color: #1c304b;
+  color: var(--var-primary-color);
+  background-color: var(--var-bg-color);
 }
 
-h1, h2, h3, h4, h5, h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
   font-weight: 700;
   line-height: 1.2;
   margin: 0 0 0.5em 0;
@@ -45,13 +78,16 @@ h6 {
   font-size: 1.2em;
 }
 
-p, ul, ol {
+p,
+ul,
+ol {
   font-size: 1.3rem;
   line-height: 1.75em;
   margin: 1.2em 0;
 }
 
-ol, ul {
+ol,
+ul {
   padding-left: 2rem;
   -webkit-padding-start: 5%;
   -webkit-padding-end: 5%;
@@ -67,24 +103,12 @@ li p {
 }
 
 a {
-  color: inherit;
-  transition: color linear .15s;
-}
-
-a:hover {
-  color: #4fd1c5;
+  color: var(--var-link-color);
+  transition: color linear 0.15s;
 }
 
 p a {
   text-decoration: none;
-  box-shadow: inset 0 -0.12em 0 #4fd1c5;
-  -webkit-transition: box-shadow .2s ease-in-out, color .2s ease-in-out;
-  transition: box-shadow .2s ease-in-out, color .2s ease-in-out;
-}
-
-p a:hover {
-  box-shadow: inset 0 -1.5em 0 #4fd1c5;
-  color: #FFF;
 }
 
 img {
@@ -92,8 +116,6 @@ img {
 }
 
 hr {
-  /* background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(253, 99, 120, .8), rgba(0, 0, 0, 0)); */
-  /* border: 0; */
   background-color: #f1f1f1;
   margin: 24px auto;
 }
@@ -101,8 +123,8 @@ hr {
 code {
   font-family: 'SF Mono', menlo, inconsolata, monospace;
   font-size: calc(1em - 2px);
-  color: #555;
-  background-color: #f0f0f0;
+  color: inherit;
+  background-color: var(--var-bg-gray);
   padding: 0.2em 0.4em;
   border-radius: 2px;
   -webkit-font-smoothing: antialiased;
@@ -110,8 +132,8 @@ code {
 }
 
 pre {
-  border-radius: 8px!important;
-  margin: 1.2em 0!important;
+  border-radius: 8px !important;
+  margin: 1.2em 0 !important;
 }
 
 pre code {
@@ -188,7 +210,9 @@ td {
     font-size: 14px;
   }
 
-  p, ul, ol {
+  p,
+  ul,
+  ol {
     font-size: 1.2rem;
     margin: 1em 0;
   }
