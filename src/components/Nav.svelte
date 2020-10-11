@@ -7,10 +7,8 @@
     align-items: flex-end;
     display: flex;
     flex: 1;
-    font-weight: 700;
     justify-content: flex-end;
-    text-transform: uppercase;
-    font-size: 14px;
+    /* font-size: 14px; */
   }
 
   a {
@@ -22,15 +20,21 @@
     margin-left: 20px;
   }
 
+  a.selected,
+  a:focus,
+  a:hover {
+    color: var(--var-link-color);
+  }
+
   a:not(.selected) {
-    opacity: 0.7;
+    opacity: 0.88;
   }
 </style>
 
 <nav>
-  <a class={segment === 'about' ? 'selected' : ''} href="about">about</a>
+  <a class={segment === 'about' ? 'selected' : ''} href="about">About</a>
   <a
     rel="prefetch"
     class={segment === 'blog' ? 'selected' : ''}
-    href="blog">blog</a>
+    href="blog">Blog</a>
 </nav>

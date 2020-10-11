@@ -1,5 +1,6 @@
 :root {
-  --var-bg-color: #ffffff;
+  --var-bg-color: #fafafa;
+  --var-header-bg: #ffffff;
   --var-bg-gray: #e1e1e1;
   --var-primary-color: rgb(36, 36, 36);
   --var-secodary-color: rgb(84, 84, 86);
@@ -11,6 +12,7 @@
 /* :root { */
   --var-bg-color: #17212d;
   --var-bg-gray: #616161;
+  --var-header-bg: #161b25;
   --var-primary-color: rgb(247, 250, 252);
   --var-secodary-color: rgb(226, 232, 240);
   --var-blue-color: rgb(29, 161, 242);
@@ -81,7 +83,7 @@ h6 {
 p,
 ul,
 ol {
-  font-size: 1.3rem;
+  font-size: 1.1rem;
   line-height: 1.75em;
   margin: 1.2em 0;
 }
@@ -104,11 +106,12 @@ li p {
 
 a {
   color: var(--var-link-color);
-  transition: color linear 0.15s;
+  transition: all linear 0.3s;
+  text-decoration: none;
 }
 
 p a {
-  text-decoration: none;
+  text-decoration: underline;
 }
 
 img {
