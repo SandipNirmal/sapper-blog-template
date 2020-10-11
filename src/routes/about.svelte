@@ -1,5 +1,5 @@
 <svelte:head>
-  <title>Sandip Nirmal | About</title>
+  <title>Sapper Blog Template | About</title>
 </svelte:head>
 
 <div class="container">
