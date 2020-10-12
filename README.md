@@ -1,4 +1,4 @@
-# sapper-blog-template
+# Sapper Blog Template
 
 ### Built with [Sapper](https://sapper.svelte.dev) [markedjs](https://marked.js.org).
 
