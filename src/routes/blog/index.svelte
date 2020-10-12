@@ -27,14 +27,14 @@
   }
 
   .post-item-date {
-    color: #aaa;
+    color: var(--var-secodary-color);
     text-align: left;
-    text-transform: uppercase;
     margin-right: 16px;
+    font-size: 0.875em;
   }
 
   hr {
-    margin: 60px auto;
+    margin: 32px auto;
   }
 </style>
 

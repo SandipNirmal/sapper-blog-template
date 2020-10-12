@@ -14,12 +14,13 @@
 </script>
 
 <script>
-  export let post
+  export let post;
 </script>
 
 <style>
   header {
     text-align: center;
+    padding-bottom: 16px;
   }
 
   header h1 {
@@ -27,15 +28,9 @@
   }
 
   header span {
-    color: #999;
+    color: var(--var-text-secondary);
     text-transform: uppercase;
-    font-weight: 600;
-    font-size: 0.875em;
-  }
-
-  header hr {
-    min-width: 100px;
-    width: 30%;
+    font-size: 0.75em;
   }
 </style>
 
@@ -46,7 +41,6 @@
 <header>
   <h1>{post.title}</h1>
   <span>{post.printDate} - {post.printReadingTime}</span>
-  <hr />
 </header>
 <div class="container">
   <article class="content">
