@@ -40,11 +40,13 @@
 
 <header>
   <h1>{post.title}</h1>
-  <span>{post.printDate} - {post.printReadingTime}</span>
+  <span>{post.printDate.toLowerCase() === 'invalid date' ? post.date : post.printDate}
+    -
+    {post.printReadingTime}</span>
 </header>
 <div class="container">
   <article class="content">
     {@html post.html}
   </article>
-  <hr />
+  <!-- <hr /> -->
 </div>
