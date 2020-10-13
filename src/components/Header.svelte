@@ -47,7 +47,24 @@
 
 <header>
   <div class="header">
-    <div class="logo"><a href="./">Sandip Nirmal</a></div>
+    <div class="logo">
+      <a href="./">
+        Sandip Nirmal
+        <!-- <svg width="48" height="48">
+        <circle cx="24" cy="24" r="20" fill="#ff3e00" />
+        <text
+          x="50%"
+          y="50%"
+          text-anchor="middle"
+          fill="white"
+          font-size="30px"
+          font-family="Arial"
+          dy=".3em">
+          S
+        </text>
+      </svg> -->
+      </a>
+    </div>
     <Nav {segment} />
   </div>
 </header>

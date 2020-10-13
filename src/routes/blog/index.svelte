@@ -10,6 +10,8 @@
 
 <script>
   export let posts;
+
+  console.log('Posts', posts)
 </script>
 
 <style>
@@ -52,7 +54,7 @@
       <h2><a rel="prefetch" href="blog/{post.slug}">{post.title}</a></h2>
       <p>{post.excerpt}</p>
       <div class="post-item-footer">
-        <span class="post-item-date">— {post.printDate}</span>
+        <span class="post-item-date">— {post.printDate.toLowerCase() === 'invalid date' ? post.date : post.printDate}</span>
       </div>
     </div>
   {/each}
