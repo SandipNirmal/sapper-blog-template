@@ -39,7 +39,7 @@
     <h1>Welcome to your new Sapper Blog.</h1>
     <p>
       This is a blog cum personal website template created using
-      <a href="https://sapper.svelte.com" rel="noopener">Sapper</a>. You can
+      <a href="https://sapper.svelte.dev" rel="noopener" target="_blank">Sapper</a>. You can
       write your blog as a markdown and you are done.
     </p>
 
