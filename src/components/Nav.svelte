@@ -71,7 +71,7 @@
 <nav>
   <button
     title={isDarkMode ? 'Turn on the Light' : 'Dim the Light'}
-    on:click={changeTheme}>{isDarkMode ? '☀️' : '🌒'}</button>
+    on:click={changeTheme}>{isDarkMode ? '🌞' : '🌒'}</button>
   <a class={segment === 'about' ? 'selected' : ''} href="about">About</a>
   <a
     rel="prefetch"
